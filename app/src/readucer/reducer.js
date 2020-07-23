@@ -7,7 +7,7 @@ export const initialState =  {
     weatherReport: [],
     weatherTemp: [],
     city: [],  
-    updateCity :'Houston', 
+    updateCity :'Houston.', 
     error: "",
 
 }
