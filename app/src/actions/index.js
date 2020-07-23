@@ -14,7 +14,7 @@ export const fetchReports = (newCity) => {
     return dispatch => {
         dispatch({type: FETCH_WEATHER_START})
         axios
-        .get(`http://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=a635da4f8eb097418cecae91074f75ae&units=imperial`)
+        .get(`https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=a635da4f8eb097418cecae91074f75ae&units=imperial`)
         .then( res => {
             dispatch({type: FETCH_WEATHER_SUCCESS, payload: res.data.weather , payload2: res.data.main , payload3: res.data.name})
         })

@@ -14,6 +14,7 @@ const Weather = props => {
    
 
     useEffect(()=>{
+        
         props.fetchReports(newCity);
     }, [])
 
